@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Titillium+Web:wght@700&display=swap");
+
+:root {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+
+  --bg-primary: #0f111a;
+  --bg-secondary: #23232e;
+
+  --primary-text: #;
+  --secondary-text: #;
+
+  font-size: 16px;
+  font-family: "Open Sans"; /* You can override later */
+
+  --border: 1px solid #474a4d;
+  --speed: 500ms;
+
+  --nav-size: ;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-primary);
+}
+
+/* Targeting pseudo-element for changing the default scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background: #a0e08a;
+  border-radius: 20px;
+}
+
+#home-logo{
+    display: flex;
+    align-items: flex-start;
+}
+.navbar {
+  height: 5rem;
+  width: 100vw; /* Relative to size of the viewport */
+  position: fixed;
+  background-color: var(--bg-primary);
+  /* background-color: red; */
+  top: 0;
+}
+
+.navbar-nav {
+  list-style: none;
+  /* padding-right: 3rem; */
+  margin-right: 3rem;
+  display: flex;
+  align-items: flex-end;
+  float: right;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 0 2rem;
+    color: var(--text-secondary);
+
+}
+
+/* .nav-link {
+    display: flex;
+    margin: 5rem;
+  } */
+
+  /* #profile-pic {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  } */
+  

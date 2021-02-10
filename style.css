@@ -1,0 +1,203 @@
+/* Titillium Web
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap"); */
+
+/* Open Sans, Titillium Web*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Titillium+Web:wght@700&display=swap");
+
+:root {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+
+  --bg-primary: #0f111a;
+  --bg-secondary: #23232e;
+
+  --primary-text: #;
+  --secondary-text: #;
+
+  font-size: 16px;
+  font-family: "Open Sans"; /* You can override later */
+
+  --border: 1px solid #474a4d;
+  --speed: 500ms;
+
+  --nav-size: ;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  /* Remove later */
+  /* color: white;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif; */
+}
+
+/* Targeting pseudo-element for changing the default scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background: #a0e08a;
+  border-radius: 20px;
+}
+
+.navbar {
+  height: 5rem;
+  width: 100vw; /* Relative to size of the viewport */
+  position: fixed;
+  background-color: var(--bg-primary);
+  top: 0;
+  box-shadow: 1000px;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin-right: 2rem;
+  display: flex;
+  align-items: flex-end;
+  float: right;
+}
+
+.nav-link {
+  display: flex;
+  margin: 5rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-content: center;
+
+  /* width: 5rem; */
+  font-family: "Open Sans";
+  margin: 2rem;
+}
+
+.nav-item a:hover {
+  color: #a0e08a;
+  text-decoration: overline;
+  transition: 100ms;
+}
+main {
+  margin-top: 5rem; /* Relative to the font-size of root element, here, 16px*/
+  /* 5rem = 5 * 16px = 80px */
+}
+#particles-js {
+  width: 100%;
+  background-color: #0f111a;
+}
+
+
+
+/*
+ul {
+  list-style: none;
+  margin: 1000px;
+  padding: 10px;
+}
+
+.navbar {
+  height: var(--nav-size);
+  background-color: var(--bg);
+  padding: 0 1rem;
+  border-bottom: var(--border);
+
+  font-size: 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: auto;
+  z-index: 10;
+
+  box-shadow: 1000px;
+}
+
+.navbar-nav {
+  /* 100% of the parent, 'navbar' 
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+*/
+/* a {
+  color: var(--primary-text);
+  text-decoration: none;
+} */
+
+body {
+  background-color: #0f111a;
+  background-color: whitesmoke;
+}
+
+#home-logo {
+  float: left;
+  /* margin: 2rem 2rem; */
+  padding: 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7ch;
+  display: flex;
+  /*margin-top: 2rem;
+  margin-bottom: 2rem; */
+  height: 100%;
+}
+
+#home-logo a {
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+#home-logo a:hover {
+  /* color: red; */
+  filter: brightness(200%);
+}
+
+/* .nav-item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-item a:hover {
+  color: #a0e08a;
+
+  text-decoration: overline;
+} */
+
+#profile-pic {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.separator {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 10%;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*
+#home {
+  text-align: center;
+} */
