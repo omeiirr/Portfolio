@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon/android-chrome-512x512.png" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/android-chrome-512x512.png"
+    />
 
-    <link rel="stylesheet" href="./styles.css" />
+    <!--  Bootstrap CSS file  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!--  Custom CSS file  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+    <!-- <link rel="stylesheet" href="./navbar.css" /> -->
     <title>Omeir Fawaz</title>
   </head>
-  <body id="particles-js">
-    <script src="particles/particles.js"></script>
-    <script src="particles/demo/js/app.js"></script>
-    <nav class="navbar">
-      <div id="home-logo" >
-        <a href="#top" class="nav-link"> OMEIR FAWAZ </a>
+  <body>
+
+    <div id="particles-js">
+
+      <script src="particles/particles.js"></script>
+      <script src="particles/demo/js/app.js"></script>
+    </div>
+
+    <!-- <nav class="navbar">
+      <div>
+        <a href="#top" class="nav-link home-logo"> OMEIR FAWAZ </a>
       </div>
 
       <ul class="navbar-nav">
@@ -35,10 +50,53 @@
           <a href="#contact" class="nav-link">Contact</a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
 
+    <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" >OMEIR FAWAZ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#">Contact</a>
+            </li>
+            
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
     <main id="home ">
-      <img id="profile-pic" src="./images/profile.jpg" alt="Profile picture" width="200px" />
+      <img
+        id="profile-pic"
+        src="./images/profile.jpg"
+        alt="Profile picture"
+        width="200px"
+      />
       <p>Hi, I am Omeir.</p>
       <p>Student, Developer, Learner</p>
     </main>
@@ -96,6 +154,10 @@
       <p>1</p>
     </section>
 
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
 
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>

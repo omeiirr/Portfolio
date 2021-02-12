@@ -23,6 +23,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* background-color: var(--bg-primary); */
+}
+
+body {
+  height: 100vh;
   background-color: var(--bg-primary);
 }
 
@@ -38,10 +43,19 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
-#home-logo{
-    display: flex;
-    align-items: flex-start;
-}
+/* .container {
+  max-width: 1000px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* #home-logo {
+  display: flex;
+  align-items: flex-start;
+
+} */
 .navbar {
   height: 5rem;
   width: 100vw; /* Relative to size of the viewport */
@@ -60,10 +74,22 @@ body::-webkit-scrollbar-thumb {
   float: right;
 }
 
-.nav-link{
-    text-decoration: none;
-    padding: 0 2rem;
-    color: var(--text-secondary);
+.nav-link {
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: var(--text-secondary);
+}
+
+.home-logo {
+  /* display: flex;
+  align-items: flex-start;
+  float: left; */
+
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.7ch;
 
 }
 
@@ -72,11 +98,14 @@ body::-webkit-scrollbar-thumb {
     margin: 5rem;
   } */
 
-  /* #profile-pic {
+/* #profile-pic {
     width: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
   } */
-  
+
+#profile-pic {
+  border-radius: 100%;
+}
