@@ -25,10 +25,25 @@ section {
 #home {
   height: 100vh;
 }
+#profile-pic {
+  border-radius: 100%;
+  display: block;
+  margin: 50px auto 20px auto;
+  border: solid #a0e08a 3px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // /* margin: 30px auto; */
+  font-size: 30px;
+}
 
 #about {
   // margin-top: 8vh;
-  background-color: aquamarine;
+  background-color: rgb(255, 255, 255);
+  color: #000;
 }
 #projects {
   background-color: tomato;

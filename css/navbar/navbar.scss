@@ -11,13 +11,17 @@ nav {
   // background-color: royalblue;
   background-color: rebeccapurple;
   font-family: "Titillium Web", sans-serif;
+  box-shadow: 0px 3px 10px 2px #bfbfbf ;
 
   .logo {
-    color: rgb(235, 229, 229);
     text-transform: uppercase;
     letter-spacing: 6px;
     word-spacing: 3px;
     font-size: 20px;
+    a {
+      text-decoration: none;
+      color: rgb(235, 229, 229);
+    }
   }
 
   .nav-links {
@@ -39,7 +43,7 @@ nav {
       text-decoration: none;
       letter-spacing: 3px;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }

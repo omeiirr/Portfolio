@@ -16,14 +16,20 @@ nav {
   height: 8vh;
   background-color: rebeccapurple;
   font-family: "Titillium Web", sans-serif;
+  -webkit-box-shadow: 0px 3px 10px 2px #bfbfbf;
+          box-shadow: 0px 3px 10px 2px #bfbfbf;
 }
 
 nav .logo {
-  color: #ebe5e5;
   text-transform: uppercase;
   letter-spacing: 6px;
   word-spacing: 3px;
   font-size: 20px;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #ebe5e5;
 }
 
 nav .nav-links {
@@ -48,7 +54,7 @@ nav .nav-links a {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .burger {
