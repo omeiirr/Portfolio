@@ -1,0 +1,125 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  align-items: center;
+  height: 8vh;
+  // background-color: royalblue;
+  background-color: rebeccapurple;
+  font-family: "Titillium Web", sans-serif;
+
+  .logo {
+    color: rgb(235, 229, 229);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    word-spacing: 3px;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    // background-color: red;
+    justify-content: space-around;
+    width: 35%;
+
+    li {
+      list-style: none;
+
+      :hover {
+        color: royalblue;
+      }
+    }
+
+    a {
+      color: rgb(235, 229, 229);
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(235, 229, 229);
+    margin: 5px;
+    transition: all 1s ease;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 50%;
+
+    // Moves the whole container off screen
+    transform: translate(100%);
+
+    li {
+      opacity: 0;
+    }
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translate(0%);
+  transition: all 0.5s ease;
+}
+
+// To turn burger into cross
+.toggle {
+  .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+// Animation to display menu items one-by-one
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
