@@ -1,3 +1,9 @@
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    window.scrollTo(0, 1);
+  }, 0);
+});
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
