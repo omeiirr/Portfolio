@@ -43,20 +43,23 @@
 
       <ul class="nav-links">
         <li>
-          <a href="#">Home</a>
+          <a data-page="home" href="#" class="nav-text">Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a data-page="about" href="#about" class="nav-text">About</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a data-page="projects" href="#projects" class="nav-text">Projects</a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a data-page="resume" href="#resume">Resume</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a data-page="contact" href="#contact">Contact</a>
         </li>
+        <div class="bubble">
+        
+        </div>
       </ul>
 
       <!-- Burger menu for mobile -->
@@ -67,7 +70,7 @@
       </div>
     </nav>
 
-    <section id="home">
+    <section data-index="0" id="home">
       <div id="particles-js">
         <script src="particles/particles.js"></script>
         <script src="particles/demo/js/app.js"></script>
@@ -81,19 +84,46 @@
       />
 
       <div class="info">
-        <p>Hi, I am Omeir.</p>
+        <h2>Omeir Fawaz</h2>
       </div>
       <div class="info">
-        <p>Student, Developer</p>
+        <h5>Student, Developer</h5>
       </div>
-      <div class="socials"></div>
+      <div class="socials">
+        <ul>
+          <li>
+            <a href="https://github.com/omeiirr" target="blank">
+              <!-- GH -->
+              <img src="./icons/github.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/omeir-fawaz" target="blank">
+              <!-- LI -->
+              <img src="./icons/linkedin.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://mail.google.com" target="blank">
+              <!-- GM -->
+              <img src="./icons/envelope-fill.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section id="about">About</section>
-    <section id="projects">Projects</section>
-    <section id="resume">Resume</section>
-    <section id="contact">Contact</section>
+    <section data-index="1" id="about">About
+      <h1></h1>
+    </section>
+
+
+
+    <section data-index="2" id="projects">Projects</section>
+    <section data-index="3" id="resume">Resume</section>
+    <section data-index="4" id="contact">Contact</section>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/navbar_anim.js"></script>
   </body>
 </html>
