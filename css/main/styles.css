@@ -14,6 +14,15 @@ section {
   color: white;
 }
 
+img {
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
 #particles-js {
   background: -webkit-gradient(linear, left bottom, right top, from(royalblue), to(tomato));
   background: linear-gradient(to right top, royalblue, tomato);
@@ -69,11 +78,19 @@ section {
 
 #home .socials li {
   list-style: none;
-  padding: 20px;
+  margin: 20px;
+}
+
+#home .socials li :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 #home .socials img {
-  width: 40px;
+  width: 50px;
+  padding: 0;
 }
 
 #home .socials a {
@@ -84,20 +101,65 @@ section {
 #about {
   background: -webkit-gradient(linear, left top, right top, from(#a8c0ff), to(#3f2b96));
   background: linear-gradient(to right, #a8c0ff, #3f2b96);
-  color: #000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .quote {
+  margin: 4rem;
+  font-family: "Open Sans", serif;
+  text-align: center;
+  margin: 20vh auto;
+  line-height: 60px;
+  width: 80vw;
 }
 
 #projects {
-  background: -webkit-gradient(linear, left bottom, right top, from(royalblue), to(tomato));
-  background: linear-gradient(to right top, royalblue, tomato);
+  background: -webkit-gradient(linear, left top, right top, from(#c2e59c), to(#64b3f4));
+  background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+
+#projects .showcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin: 30px 40px;
+}
+
+#projects .showcase .card {
+  border: 1px solid gray;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+#projects .showcase .card img {
+  width: 100%;
 }
 
 #resume {
-  background-color: aquamarine;
+  background: -webkit-gradient(linear, left top, right top, from(#fd746c), to(#ff9068));
+  background: linear-gradient(to right, #fd746c, #ff9068);
 }
 
 #contact {
-  background-color: tomato;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#434343));
+  background: linear-gradient(to right, #000000, #434343);
+  min-height: 10vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -106,6 +168,9 @@ section {
   }
   #profile-pic {
     width: 120px;
+  }
+  .socials img {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

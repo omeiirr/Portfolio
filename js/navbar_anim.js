@@ -2,14 +2,15 @@ const sections = document.querySelectorAll("section");
 const bubble = document.querySelector(".bubble");
 
 const gradients = [
-  "linear-gradient(to right top, #f46b45, #eea849)",
-  "linear-gradient(to right top, #f46b45, #eea849)",
-  "linear-gradient(to right top, #e53935, #e35d5b)",
   "linear-gradient(to right top, royalblue, tomato)",
+  "linear-gradient(to right, #a8c0ff, #3f2b96)",
+  "linear-gradient(to right, #c2e59c, #64b3f4)",
+  "linear-gradient(to right, #fd746c, #ff9068)",
+  "linear-gradient(to right, #000000, #434343)"
 ];
 
 const options = {
-  threshold: 0.8, // Activate when scroll is at 70%
+  threshold: 0.7, // Activate when scroll is at 70%
 };
 
 let observer = new IntersectionObserver(navCheck, options);
@@ -31,7 +32,6 @@ function navCheck(entries) {
       left: coords.left,
     };
 
-    
     if (entry.isIntersecting) {
       bubble.style.setProperty("left", `${directions.left}px`);
       bubble.style.setProperty("top", `${directions.top}px`);
