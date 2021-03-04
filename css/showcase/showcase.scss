@@ -28,6 +28,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 
   .card {
     width: 100%;
@@ -38,8 +39,14 @@
     border-radius: 10px;
     // background: $grad-bg-9;
     background: linear-gradient(to right, #000000, #434343);
-    // box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    // box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.9);
     transition: 0.5s ease;
+
+    &:hover {
+      // transform: scale(1.05);
+      box-shadow: 0 18px 53px 0 rgba(0, 0, 0, 0.9);
+      display: none;
+    }
 
     .card-image {
       width: 100%;
@@ -72,23 +79,32 @@
 
       a {
         font-family: monospace;
-        font-size: 18px;
-        // border-radius: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: white;
+        background-color: #00bf8f;
+        padding: 7px 10px;
         text-decoration: none;
         text-align: center;
-        color: white;
-      }
-      a:hover {
-        // transform: scale(1.05);
-        // box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-        color: rgb(224, 224, 62);
+        letter-spacing: 3px;
+
+        &:hover {
+          // transform: scale(1.05);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          color: #00bf8f;
+          background-color: whitesmoke;
+          transition: 0.3s ease;
+        }
       }
     }
   }
-
-  .card:hover {
-    // transform: scale(1.05);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-  }
 }
 
+@media screen and (max-width: 768px) {
+  .showcase {
+    .card {
+      width: 90vw;
+    }
+  }
+}

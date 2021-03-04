@@ -9,6 +9,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0;
 }
 
 .showcase .card {
@@ -27,6 +28,12 @@
   background: linear-gradient(to right, #000000, #434343);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+.showcase .card:hover {
+  -webkit-box-shadow: 0 18px 53px 0 rgba(0, 0, 0, 0.9);
+          box-shadow: 0 18px 53px 0 rgba(0, 0, 0, 0.9);
+  display: none;
 }
 
 .showcase .card .card-image {
@@ -69,18 +76,29 @@
 
 .showcase .card .card-links a {
   font-family: monospace;
-  font-size: 18px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #00bf8f;
+  padding: 7px 10px;
   text-decoration: none;
   text-align: center;
-  color: white;
+  letter-spacing: 3px;
 }
 
 .showcase .card .card-links a:hover {
-  color: #e0e03e;
-}
-
-.showcase .card:hover {
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  color: #00bf8f;
+  background-color: whitesmoke;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .showcase .card {
+    width: 90vw;
+  }
 }
 /*# sourceMappingURL=showcase.css.map */
