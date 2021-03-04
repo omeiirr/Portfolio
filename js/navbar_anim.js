@@ -6,7 +6,7 @@ const gradients = [
   "linear-gradient(to right, #a8c0ff, #3f2b96)",
   "linear-gradient(to right, #c2e59c, #64b3f4)",
   "linear-gradient(to right, #fd746c, #ff9068)",
-  "linear-gradient(to right, #000000, #434343)"
+  "linear-gradient(to right, #8e9eab, #eef2f3)"
 ];
 
 const options = {

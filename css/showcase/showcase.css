@@ -20,13 +20,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
+  margin: 10px auto;
   border: none;
   border-radius: 10px;
   background: -webkit-gradient(linear, left top, right top, from(#000000), to(#434343));
   background: linear-gradient(to right, #000000, #434343);
-  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -82,8 +80,6 @@
 }
 
 .showcase .card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }

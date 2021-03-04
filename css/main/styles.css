@@ -172,5 +172,9 @@ img {
   .socials img {
     width: 80%;
   }
+  #about .quote {
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
