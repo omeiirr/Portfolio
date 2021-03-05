@@ -170,6 +170,7 @@ img {
 }
 
 #contact {
+  padding-top: 5vh;
   background: -webkit-gradient(linear, left top, right top, from(#000000), to(#434343));
   background: linear-gradient(to right, #000000, #434343);
   min-height: 20vh;
