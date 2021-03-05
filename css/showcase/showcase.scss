@@ -23,18 +23,26 @@
 
 @import "../gradientcolors";
 
+// Temporary fix //
+body{
+  background: $grad-bg-10;
+}
+// // //
 .showcase {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
   margin-top: 0;
 
   .card {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 10px auto;
+    // margin: 10px auto;
     border: none;
     border-radius: 10px;
     // background: $grad-bg-9;
