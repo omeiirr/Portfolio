@@ -32,6 +32,7 @@ body {
           flex-direction: column;
   border: none;
   border-radius: 10px;
+  margin: auto auto;
   background: -webkit-gradient(linear, left top, right top, from(#000000), to(#434343));
   background: linear-gradient(to right, #000000, #434343);
   -webkit-transition: 0.5s ease;
