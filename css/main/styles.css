@@ -157,16 +157,25 @@ img {
   text-align: center;
 }
 
-#resume div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#resume a {
+  text-decoration: none;
+}
+
+#resume .showResumeButton {
+  width: 15%;
+  padding: 10px;
+  margin: auto;
+  border: 3px solid #f8f5ec;
+  color: #f8f5ec;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin-top: 17%;
+  border-radius: 5px;
+}
+
+#resume .showResumeButton:hover {
+  background-color: #f8f5ec;
+  color: #191414;
 }
 
 #contact {
@@ -200,6 +209,13 @@ img {
   #about .quote {
     font-size: 20px;
     line-height: 40px;
+  }
+  #resume {
+    font-size: 20px;
+  }
+  #resume .showResumeButton {
+    width: 50vw;
+    margin-top: 60%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
