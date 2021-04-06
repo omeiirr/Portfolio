@@ -20,26 +20,39 @@
       "short_name": "About",
       "description": "A quick introduction about me!",
       "url": "/#about",
-      "icons": [{ "src": "images/favicon/android-chrome-192x192.png", "sizes": "192x192" }]
-      
+      "icons": [
+        {
+          "src": "images/favicon/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Projects",
       "short_name": "Projects",
       "description": "View my past projects",
       "url": "/#projects",
-      "icons": [{ "src": "images/favicon/android-chrome-192x192.png", "sizes": "192x192" }]
-    }
+      "icons": [
+        {
+          "src": "images/favicon/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
     {
       "name": "Resume",
       "short_name": "Resume",
       "description": "View resume",
       "url": "/#resume",
-      "icons": [{ "src": "images/favicon/android-chrome-192x192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "images/favicon/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
-  
 }
